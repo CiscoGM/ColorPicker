@@ -52,6 +52,7 @@ class ColorPickerApp:
             color = self.get_hex_color(int(angle))
             self.color_label.config(text=color)
             self.color_display.config(bg=color)
+            self.color_to_copy = color
 
     def copy_color(self):
         if hasattr(self, "color_to_copy"):
